@@ -1,6 +1,7 @@
 # rvangelse-portfolio
 
 Este es mi portafolio web personal, donde muestro mis proyectos y habilidades. 
+
 Está desarrollado con **HTML y CSS**, siguiendo un diseño minimalista y accesible.  
 
 ## 🌍 Vista previa  
@@ -15,7 +16,7 @@ Puedes ver el sitio en línea aquí: [rvangelse.com](https://rvangelse.com/)
 
 ## 🔧 Futuras mejoras
 - Generar una mayor interactividad usando JS
-    - Boton estilo "hamburguesa" para la barra de navegación en Mobile
+    - Crear un botón estilo "hamburguesa" para la barra de navegación en Mobile
     - Deshabilitar los botones en las descripciones de los proyectos hasta que la animación se haya completado.
 - Crear proyectos reales y habilitar sus demos
 
@@ -27,4 +28,4 @@ Si tienes alguna sugerencia, puedes contactarme en:
 
 ---
 
-Desarrollado y diseñado por **rvangelse**. 🚀 
+Desarrollado y diseñado por **rvangelse** 🚀 
