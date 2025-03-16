@@ -23,8 +23,7 @@ Puedes ver el sitio en línea aquí: [rvangelse.com](https://rvangelse.com/)
 ## 📬 Contacto  
 Si tienes alguna sugerencia, puedes contactarme en:  
 - [X](https://x.com/rvangelse)  
-- [LinkedIn](https://www.linkedin.com/in/rvangelse/)  
-- [GitHub](https://github.com/rvangelse)  
+- [LinkedIn](https://www.linkedin.com/in/rvangelse/)    
 
 ---
 
