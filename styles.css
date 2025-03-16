@@ -1,0 +1,286 @@
+/* Modificaciones globales */
+* {
+    /* Reseteo margin y padding */
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255); /* Elijo el color blanco como color de fuente */
+    text-align: center; /* Centro todo el texto */
+
+    &::selection {
+      background: #7d7d7d; /* Aplico un efecto al "seleccionar" */
+    }
+
+    /* Estilos para los enlaces */
+    a {
+      text-decoration: none;
+    }
+    a:hover, strong:hover {
+      color: #d3d3d3;
+    }
+}
+
+
+/* Estilos para el header */
+header{
+  /* Separacion del margen superior de la pagina */
+  padding-top: 25px;
+  /* Fondo */
+  background: black;
+
+  /* Imagen */
+  img{
+    /* Circunferencia */
+    border-radius: 50%;
+    /* Fondo */
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* Titulo*/
+  h1{
+    font-size: 36px;
+  }
+
+  /* Subtitulo*/
+  h2{
+    font-size:24px;
+    font-weight: lighter; /* Adelgazo la fuente del subtitulo */
+  }
+}
+
+
+/* Estilos para el menú de navegación */
+nav{
+  /* Separación del resto de elementos */
+  padding: 20px;
+  margin-top: 15px;
+
+  a{
+    font-size: 22px;
+  }
+
+}
+
+
+/* Estilos para el main */
+main {
+  /* Fondo */
+  background: linear-gradient(#000000,#292929,#545454);
+
+  /* Estilos para cada sección */
+  section{
+    /* Ancho */
+    max-width: 100%; /* Hago que cubran todo el ancho de la página */
+    /* Separación entre secciones */
+    padding: 18px; 
+    text-wrap: pretty; /* Ajusto el texto */
+  }
+
+  /* Estilos para los títulos */
+  h2 {
+    font-size: 28px;
+    /* Separación con sus elementos */
+    margin-bottom: 15px;
+  }
+
+  /* Estilos para los párrafos */
+  p{
+    font-size: 20px;
+  }
+
+  /* Estilos para los contenedores de las figures */
+  #portafolio div, #habilidades div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  /* Estilos para las figures */
+  figure {
+    /* Separación entre elementos */
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    /* Estilos para los títulos de las figures */
+    figcaption{
+      font-size: 20px;
+      padding: 10px;
+      color: #e2e2e2;
+    }
+
+    /* Estilos para los bordes */
+    border-radius: 10%;
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Animación general de las figures (Bordes)*/
+    position: relative;
+    transition: box-shadow 0.3s ease-out;
+    /* Efecto de la animación */
+    &:hover, &:active {
+      box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+
+    }
+  }
+
+  /* Estilos para las figures de habilidades */
+  #habilidades figure {
+    height: 135px;
+    
+    /* Estilos para los carteles de la animación */
+    span{
+      width: 120px;
+      background-color: rgba(0,0,0,0.75);
+      text-align: center;
+      padding: .5rem 0;
+      border-radius: .5rem;
+
+    /* Animación de los carteles */
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      left: 50%;
+      transform: translate(-60px, 200px);
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    /* Efecto de la animación */
+    &:hover, &:active {
+      span{
+        opacity: 1;
+        transform: translate(-60px, 142px);
+        box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  /* Estilos para las figures de portafolio */
+  #portafolio figure{
+    /* Estilos para las imágenes */
+    img{
+      width: 100%;
+      height: 230px;
+    }
+
+    /* Estilos para los contenedores de las descripciones */
+    .oculto {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 1);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+
+      /* Estilos para las descripciones */
+      p {
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+  
+      li {
+        margin-bottom: 10px;
+      }
+
+      /* Estilos para los contenedores de los botones */
+      .botones {
+        margin-bottom: 35px;
+        width: 65%;
+        
+        /* Estilos para los botones */
+        .boton {
+          background: #fff;
+          color: black;
+          padding: 10px;
+          border-radius: 10px;
+          font-weight: 500;
+          font-size: 18px ;
+          text-decoration: none;
+
+          /* Animación de los botones */
+          transition:  background 0.3s ease-out, box-shadow 0.3s ease-out;
+          /* Efecto de la animación */
+          &:hover, &:active {
+            cursor: pointer;
+            box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.3), 0px 0px 15px rgba(255, 255, 255, 0.5);
+          }
+        }  
+      }
+    }
+
+    /* Animación de los contenedores de las descripciones */
+    position: relative;
+    overflow: hidden;
+    /* Efecto de la animación */
+    &:hover, &:active {
+      img{
+        filter: blur(10px) brightness(0.4);
+      }
+
+      .oculto {
+        opacity: 1;
+      }
+    }
+  }  
+}
+
+/* Estilos para el footer */
+footer {
+  margin-bottom: 0;
+  padding: 10px;
+  font-size: 20px;
+  background: #545454;
+  
+  /* Estilos para la línea de separación */
+  hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2px;
+    width: 100%;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
+  }
+
+  /* Estilos para el titulo */
+  h3{
+    font-size: 28px;
+  }
+
+  /* Estilos para los enlaces */
+  nav{
+    padding: 0;
+
+    a{
+      font-size: 18px;
+    }
+  }
+
+  /* Estilos para el texto pequeño */
+  small{
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
