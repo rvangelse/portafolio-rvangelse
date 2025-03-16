@@ -17,7 +17,7 @@ Puedes ver el sitio en línea aquí: [rvangelse.com](https://rvangelse.com/)
 ## 🔧 Futuras mejoras
 - Generar una mayor interactividad usando JS
     - Crear un botón estilo "hamburguesa" para la barra de navegación en Mobile
-    - Deshabilitar los botones en las descripciones de los proyectos hasta que la animación se haya completado.
+    - Deshabilitar los botones en las descripciones de los proyectos hasta que la animación se haya completado al 100%
 - Crear proyectos reales y habilitar sus demos
 
 ## 📬 Contacto  
