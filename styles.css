@@ -88,7 +88,7 @@ main {
   }
 
   /* Estilos para los contenedores de las figures */
-  #portafolio div, #habilidades div{
+  #proyectos div, #habilidades div{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -157,8 +157,8 @@ main {
     }
   }
 
-  /* Estilos para las figures de portafolio */
-  #portafolio figure{
+  /* Estilos para las figures de proyectos */
+  #proyectos figure{
     /* Estilos para las imágenes */
     img{
       width: 100%;
